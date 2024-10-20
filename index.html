@@ -7,7 +7,7 @@
     
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-<title>野草吃鸡自用</title>
+<title>野草自用</title>
     
 <script defer="" async="" src="/vue.min.js"></script>
     
@@ -96,7 +96,7 @@
             border-radius: 70px;
             padding: 0 8px;
             margin: 5px 0;
-            font-size: 22px;
+            font-size: 18px;
         }
 
         button:active {
@@ -123,7 +123,7 @@
             
 <section>
                 
-<h3 style="color: red;">1.美化高危功能谨慎使用封号后果自负<br>2.美化功能均使用默认皮肤美化<br>3.除去枪皮配件车皮其余美化均可能产生透明人<br>4.飞行器用粉色喷雾器美化<!--防秃头不可和头发美化一起使用--><br>5.没充钱只能两套方案所以未设置多套美化</h3>
+<h3 style="color: red;">美化高危功能谨慎使用封号后果自负<br>如要使用美化请先看说明<br>顺序:验证端口-验证条数-开功能-关后台<br>所有功能均卡注册开启<br>不要重复启动功能</h3>
 <table>
                         
 <tbody>
@@ -139,20 +139,20 @@
 
                     
 <h6>
-<img width="150" src="https://api.suyanw.cn/api/sjbz.php"></h6>                                                        
+<img width="150" src="https://api.suyanw.cn/api/comic.php"></h6>                                                        
 <a style="color: blue;">野草半火美化版<html lang="zh">
 </a><br>
-<a style="color: green;">动物丛林版本<html lang="zh">
+<a style="color: green;">和平动物丛林版本<html lang="zh">
 </a>
 <a>
-
-                            
-<button onclick="yz()">验证必点</button>
+      
+                                     
+<button onclick="yz()">验证条数必点</button>
 
                             
 <button onclick="myFunction1()">
                                 
-<p style="color: orange;">透色功能</p>
+<p style="color: orange;">M2 16系统透色</p>
                             </button>
                             
 <p id="1myText" style="display:none">
@@ -163,62 +163,87 @@
  <button onclick="tz()">透套装</button>
  <button onclick="hy()">透幻影</button>
  
-                            </p>
+                   </p>
  
- <button onclick="myFunction2()">
+ <!--<button onclick="myFunction2()">
                                 
-<p style="color: orange;">美化枪械车皮</p>
+<p style="color: orange;">和平美化功能</p>
                             </button>
                             
-<p id="2myText" style="display:none">
+<p id="2myText" style="display:none">-->
+ 
+ 
+                           
+ 
+ <button onclick="myFunction3()">
+                                
+<p style="color: orange;">美化枪械/配件/车皮</p>
+                            </button>
+                            
+<p id="3myText" style="display:none">
                                 
  <button onclick="mh()">枪皮美化</button>
  <button onclick="mh1()">配件美化</button>
- <!--<button onclick="mh3()">车皮美化</button>
+ <button onclick="mh3()">车皮美化待定</button>
  
 
-             <!--  </p>
- 
- <button onclick="myFunction3()">
- 
- <p style="color: orange;">美化头发</p>
-                            </button>
-                            
-                           
- <p id="3myText" style="display:none">
- <button onclick="tf()">猛禽帽子改火箭头发</button>
- <button onclick="tf1()">黑白无檐帽改绿头发</button>
-     
-                           </p>
+               </p>
  
  <button onclick="myFunction4()">
  
+ <p style="color: orange;">美化头发</p>
+                            </button>
+                                              
+ <p id="4myText" style="display:none">
+ <button onclick="tf()">火箭头发</button>
+ <button onclick="tf1()">小丑绿头发</button>
+     
+        </p>                   
+ 
+ <button onclick="myFunction5()">
+ 
  <p style="color: orange;">美化衣物</p>
                             </button>
- <p id="4myText" style="display:none">
- <button onclick="yw1()">小白衣改炽羽金尊</button>
- <button onclick="yw2()">海盐绵绵冰改兔兔小魔女</button>
- <button onclick="yw3()">猛禽上衣改火箭101</button>
- <button onclick="yw4()">猎鹰上衣改追光队服</button>
+ <p id="5myText" style="display:none">
+ <button onclick="yw1()">炽羽金尊</button>
+ <button onclick="yw2()">兔兔小魔女</button>
+ <button onclick="yw3()">火箭101</button>
+ <button onclick="yw4()">绿色追光队服</button>
  
  
-                            </p>
+        </p>                    
   
- <button onclick="myFunction5()">
+ <button onclick="myFunction6()">
                                 
 <p style="color: orange;">美化杂项</p>
                             </button>
                             
-<p id="5myText" style="display:none">
+<p id="6myText" style="display:none">
  <button onclick="mh4()">飞行器降落伞</button>
  <button onclick="mh2()">头盔背包美化</button>
- <button onclick="tt()">美化套装防秃头</button>         -->
+ <button onclick="bq()">表情美化待定</button>
+ <button onclick="tt()">美化套装防秃头</button>
  
  
  
  
-                            </p>                           
+                            </p>
+  <!--
+ <button onclick="myFunction7()">
+                                
+<p style="color: orange;">cfm美化待定</p>
                             </button>
+                            
+<p id="7myText" style="display:none">
+ <button onclick="bb1()">m4美化</button>
+ <button onclick="bb2()">ak美化</button>
+ <button onclick="bb3()">狙击美化</butto>
+                            </p>                       -->
+                            </button>
+                            </p>
+                            
+<button onclick="copyText()">美化对应说明</button>
+                            
 <script>﻿function refreshProcList() {
 	var procs = h5gg.getProcList();
 	var game;
@@ -306,11 +331,38 @@ setButtonAction(function() {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function yz() {
 	h5gg.clearResults();
 	h5gg.searchNumber('0.05499718338', 'F32', '0x100000000', '0x300000000');
-	alert('数据：' + h5gg.getResultsCount() + '条，【数据必须4条】');
+	alert('数据：' + h5gg.getResultsCount() + '条，【数据必须4条否则划后台重来】');
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -687,9 +739,6 @@ function mh1() {
     
     function mh3() {
     alert('数据略多请耐心等待提示修改完成');
-    h5gg.clearResults();
-    h5gg.searchNumber('403251', 'I32', '0x100000000','0x3000000000');
-    h5gg.editAll('403888', 'I32');
     alert('车皮美化完成');
     }
     
@@ -763,6 +812,13 @@ function mh1() {
     h5gg.editAll('400985', 'I32');
     alert('防秃头美化完成');
     }
+     
+     
+     
+     function bq() {
+    alert('表情美化完成');
+    }
+     
      
      
      
@@ -897,7 +953,7 @@ function tz() {
     function bs() {
     h5gg.clearResults();
     h5gg.searchNumber('0.05499718338', 'F32', '0x100000000', '0x160000000');
-    h5gg.searchNearby('1', 'F32', '0x100');
+    h5gg.searchNearby('1', 'F32', '0x20');
     var count = h5gg.getResultsCount();
     var r = h5gg.getResults(2);
     r = r[1];
@@ -1018,5 +1074,27 @@ function myFunction5() {
 	}
 }
 
+
+function myFunction6() {
+	var x = document.getElementById("6myText");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
+
+function myFunction7() {
+	var x = document.getElementById("7myText");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
+
+function copyText() {
+	window.location.href = "https://docs.qq.com/doc/DT2dIQWV6TlFFSmxE";
+}
 
 </script></a></section></div></div></body></html>
