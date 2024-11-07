@@ -953,12 +953,8 @@ function tz() {
     function bs() {
     h5gg.clearResults();
     h5gg.searchNumber('0.05499718338', 'F32', '0x100000000', '0x160000000');
-    h5gg.searchNearby('1', 'F32', '0x20');
-    var count = h5gg.getResultsCount();
-    var r = h5gg.getResults(2);
-    r = r[1];
-    var addr1 = r.address;
-    h5gg.setValue(addr1, 12, "F32");
+    h5gg.searchNearby('1', 'F32', '0x100');
+    h5gg.editAll('12', 'F32');
     alert('白色开启完成');
     }
     
